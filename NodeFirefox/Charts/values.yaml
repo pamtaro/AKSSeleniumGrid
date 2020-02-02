@@ -1,10 +1,10 @@
 # Default values for jobot.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-fullnameOverride: selenium-hub
+fullnameOverride: selenium-node-firefox
 replicaCount: 1
 image:
-  repository: selenium/hub
+  repository: selenium/node-firefox
   tag: 3.141
   pullPolicy: IfNotPresent
 imagePullSecrets: []
@@ -15,7 +15,7 @@ imagePullSecrets: []
   # This uses credentials from secret "myRegistryKeySecretName".
   # - name: myRegistryKeySecretName
 service:
-  port: 4444
+  port: 5900
 
 probes:
   enabled: false
